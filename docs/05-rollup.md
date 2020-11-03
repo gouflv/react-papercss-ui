@@ -46,3 +46,37 @@ export default {
 
 We could run `rollup -c`  to let rollup start build this library, then you will be seeing  output files in `dist` folder:
 
+```
+# tree dist
+├── components
+│   ├── button
+│   │   ├── Button.d.ts
+│   │   ├── Button.stories.d.ts
+│   │   └── __test__
+│   │       └── Button.test.d.ts
+│   └── space
+│       └── Space.d.ts
+├── index.d.ts
+├── index.es.js
+├── index.es.js.map
+├── index.js
+└── index.js.map
+
+```
+
+
+
+Oops, theme are some `stories.d.ts` `test.d.ts` files create by typescript. 
+
+Luckily, we could ignore it by adding some  `exclude` path to the `tsconfig.json` :
+
+```json
+...
+"exclude": [
+  "node_modules",
+  "dist",
+  "components/**/*.stories.tsx",
+  "components/**/*.test.tsx"
+]
+```
+
