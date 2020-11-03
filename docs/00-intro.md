@@ -8,8 +8,7 @@ There are several requirements that our component library should:
 - Sass
 - Typescript
 - Components base on PaperCSS
-- Storybook of development preview
-- use StyleGuide to build Doc and Example
+- Storybook for development preview and Doc
 - Testing with Jest
 - Custom Rollup for library packaging tool
 
