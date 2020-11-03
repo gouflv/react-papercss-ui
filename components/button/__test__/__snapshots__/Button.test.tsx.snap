@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Component should called event handler on click 1`] = `
+<div>
+  <button
+    class="paper-btn btn-primary"
+  >
+    Button Test
+  </button>
+</div>
+`;
+
+exports[`Test Component should have block className with set block 1`] = `
+<div>
+  <button
+    class="paper-btn btn-primary btn-block"
+  >
+    Button Test
+  </button>
+</div>
+`;
+
+exports[`Test Component should have default className with default props 1`] = `
+<div>
+  <button
+    class="paper-btn btn-primary"
+  >
+    Button Test
+  </button>
+</div>
+`;
+
+exports[`Test Component should have disabled attr with set disabled 1`] = `
+<div>
+  <button
+    class="paper-btn btn-primary"
+    disabled=""
+  >
+    Button Test
+  </button>
+</div>
+`;
+
+exports[`Test Component should have secondary className with type set as secondary 1`] = `
+<div>
+  <button
+    class="paper-btn btn-secondary"
+  >
+    Button Test
+  </button>
+</div>
+`;
+
+exports[`Test Component should have sizing className with size set as large 1`] = `
+<div>
+  <button
+    class="paper-btn btn-primary btn-large"
+  >
+    Button Test
+  </button>
+</div>
+`;
