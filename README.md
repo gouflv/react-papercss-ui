@@ -12,7 +12,7 @@
 ## Roadmap
 - [X] Button
 - [X] Card
-- [ ] Space
+- [X] Space
 - [ ] Collapse
 - [ ] Tabs
 - [ ] Modal

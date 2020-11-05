@@ -1,1 +1,7 @@
 @import '~papercss/src/styles.scss';
+
+.space {
+  > * {
+    margin: 1rem;
+  }
+}

@@ -15,18 +15,20 @@ Basic.args = { children: 'Button' } as ButtonProps
 
 export const All = () => (
   <>
-    <Button>Normal Button</Button>
-    <Space />
-    <Button type={'primary'}>Primary</Button>
-    <Space />
-    <Button type={'secondary'}>Secondary</Button>
-    <Space />
-    <Button size={'large'}>Large</Button>
-    <Space />
-    <Button block>Block</Button>
-    <Space />
-    <Button type={'danger'} plain>Plain</Button>
-    <Space />
-    <Button type={'primary'} disabled>Disabled</Button>
+    <Space>
+      <Button>Normal Button</Button>
+      <Button type={'primary'}>Primary</Button>
+      <Button type={'secondary'}>Secondary</Button>
+      <Button size={'large'}>Large</Button>
+      <Button type={'danger'} plain>
+        Plain
+      </Button>
+      <Button type={'primary'} disabled>
+        Disabled
+      </Button>
+    </Space>
+    <div style={{ width: '20em' }}>
+      <Button block>Block</Button>
+    </div>
   </>
 )
