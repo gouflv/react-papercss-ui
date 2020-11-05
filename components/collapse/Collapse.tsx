@@ -6,15 +6,13 @@ import React, {
   useEffect,
   useState
 } from 'react'
+import { toArray } from '../../utils/children'
 
 export type CollapseProps = PropsWithChildren<{
   activeKey?: string | string[] | number | number[]
   accordion?: boolean
+  onChange?: (activeKey) => void
 }>
-
-function toArray<T>(children: ReactNode) {
-  return React.Children.toArray(children) as T[]
-}
 
 const Collapse = (props: PropsWithChildren<CollapseProps>) => {
   const [active, setActive] = useState<string[]>([])
@@ -53,6 +51,12 @@ const Collapse = (props: PropsWithChildren<CollapseProps>) => {
     }
   }
 
+  useEffect(() => {
+    if (typeof props.onChange === 'function') {
+      props.onChange(active)
+    }
+  }, [active])
+
   return <div className='collapse-group'>{childRender()}</div>
 }
 
@@ -64,13 +68,15 @@ export interface PanelProps {
 }
 
 const Panel: FC<PanelProps> = props => {
+  function onClick() {
+    if (props.onClick && props.name && !props.active) {
+      props.onClick(props.name)
+    }
+  }
+
   return (
     <div className='collapsible'>
-      <label
-        onClick={() => props.onClick && props.name && props.onClick(props.name)}
-      >
-        {props.header}
-      </label>
+      <label onClick={onClick}>{props.header}</label>
       {!!props.active && (
         <div
           className='collapsible-body'

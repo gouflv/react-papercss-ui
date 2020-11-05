@@ -5,7 +5,7 @@ import { Collapse, CollapseProps } from './Collapse'
 const { Panel } = Collapse
 
 export default {
-  title: 'Collapse',
+  title: 'Data Display/Collapse',
   component: Collapse
 }
 

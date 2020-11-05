@@ -6,7 +6,7 @@ import { Card, CardProps } from './Card'
 const { CardBody } = Card
 
 export default {
-  title: 'Card',
+  title: 'Data Display/Card',
   component: Card,
   subcomponents: {
     CardBody

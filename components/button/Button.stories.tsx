@@ -4,7 +4,7 @@ import { Space } from '../space/Space'
 import { Button, ButtonProps } from './Button'
 
 export default {
-  title: 'Button',
+  title: 'General/Button',
   component: Button
 }
 
