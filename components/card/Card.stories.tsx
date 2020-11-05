@@ -1,7 +1,9 @@
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 import { Button } from '../button/Button'
-import { Card, CardBody, CardProps } from './Card'
+import { Card, CardProps } from './Card'
+
+const { CardBody } = Card
 
 export default {
   title: 'Card',

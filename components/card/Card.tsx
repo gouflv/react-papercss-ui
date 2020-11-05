@@ -1,4 +1,4 @@
-import React, { CSSProperties, FC, ReactNode } from 'react'
+import React, { CSSProperties, FC, PropsWithChildren, ReactNode } from 'react'
 
 export interface CardProps {
   header?: string
@@ -12,7 +12,7 @@ export interface CardBodyProps {
   desc?: string | ReactNode
 }
 
-const Card: FC<CardProps> = props => {
+const Card = (props: PropsWithChildren<CardProps>) => {
   return (
     <div className={'card'} style={props.style}>
       {!!props.header && <div className='card-header'>{props.header}</div>}
@@ -30,5 +30,7 @@ const CardBody: FC<CardBodyProps> = props => (
     {props.children}
   </div>
 )
+
+Card.CardBody = CardBody
 
 export { Card, CardBody }
