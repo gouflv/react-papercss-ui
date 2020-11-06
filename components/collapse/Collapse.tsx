@@ -52,7 +52,7 @@ const Collapse = (props: PropsWithChildren<CollapseProps>) => {
   }
 
   useEffect(() => {
-    if (typeof props.onChange === 'function') {
+    if (typeof props.onChange === 'function' && active !== props.activeKey) {
       props.onChange(active)
     }
   }, [active])
