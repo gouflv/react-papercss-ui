@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Collapse Component should open panel with active set as "1" 1`] = `
+<div>
+  <div
+    class="collapse-group"
+  >
+    <div
+      class="collapsible"
+    >
+      <label>
+        Fist
+      </label>
+      <div
+        class="collapsible-body"
+        style="max-height: none; padding: 0.75rem; opacity: 1;"
+      >
+        Fist Panel
+      </div>
+    </div>
+    <div
+      class="collapsible"
+    >
+      <label>
+        Second
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Test Collapse Component should open un-name panel with active set as "1" 1`] = `
+<div>
+  <div
+    class="collapse-group"
+  >
+    <div
+      class="collapsible"
+    >
+      <label>
+        Fist
+      </label>
+    </div>
+    <div
+      class="collapsible"
+    >
+      <label>
+        Second
+      </label>
+    </div>
+  </div>
+</div>
+`;
