@@ -1,9 +1,9 @@
 # React PaperCSS UI
 
 
-[Preview](https://github.com/gouflv/react-papercss-ui/stories)
+[Preview](https://gouflv.github.io/react-papercss-ui/stories/)
 
-[Tutorial: Create a React Library](https://github.com/gouflv/react-papercss-ui)
+[Tutorial: Create a React Library](https://github.com/gouflv/react-papercss-ui/blob/master/docs/00-intro.md)
 
 ## Features
 - Styling by PaperCSS
@@ -25,5 +25,4 @@
 
 ## CI
 - [X] Storybook Deploy
-- [ ] Tutorial Doc Deploy
 - [ ] Testing
