@@ -2,6 +2,7 @@ name: Deploy Storybook to GitHub Pages
 
 on:
   push:
+    paths: ["components/**"]
     branches:
       - master
 
