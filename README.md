@@ -8,8 +8,9 @@
 ## Features
 - Styling by PaperCSS
 - Build with Rollup and typescript
-- Preview  Storybook
+- Preview components in Storybook
 - Testing with Jest and @testing-library
+- Use Github workflows to automate tasks
 
 ## Usage
 [WIP]
