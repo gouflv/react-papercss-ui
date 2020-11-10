@@ -28,7 +28,7 @@ const Collapse = (props: PropsWithChildren<CollapseProps>) => {
 
   function childRender() {
     return toArray<ReactElement>(props.children).map((child, index) => {
-      const key = String(child.props.name) || String(index)
+      const key = child.props.name || String(index)
       const isActive = !!~active.indexOf(key)
       return React.cloneElement(child, {
         ...child.props,
@@ -40,12 +40,13 @@ const Collapse = (props: PropsWithChildren<CollapseProps>) => {
   }
 
   function onPanelClick(key: string | number) {
+    const _active = String(key)
     if (props.accordion) {
-      setActive([String(key)])
+      setActive(!!~active.indexOf(_active) ? [] : [String(key)])
     } else {
       setActive(prevState => {
         const keySet = new Set(prevState)
-        keySet.add(String(key))
+        keySet.has(_active) ? keySet.delete(_active) : keySet.add(_active)
         return Array.from(keySet)
       })
     }
@@ -69,7 +70,7 @@ export interface PanelProps {
 
 const Panel: FC<PanelProps> = props => {
   function onClick() {
-    if (props.onClick && props.name && !props.active) {
+    if (props.onClick && props.name) {
       props.onClick(props.name)
     }
   }
