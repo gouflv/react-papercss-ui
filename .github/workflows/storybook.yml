@@ -23,6 +23,6 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: stories
+          FOLDER: storybook-static
           CLEAN: true
-          TARGET_FOLDER: stories 
+          TARGET_FOLDER: stories
