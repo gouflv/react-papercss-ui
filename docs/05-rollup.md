@@ -66,9 +66,7 @@ We could run `rollup -c`  to let rollup start build this library, then you will 
 
 
 
-Oops, theme are some `stories.d.ts` `test.d.ts` files create by typescript. 
-
-Luckily, we could ignore it by adding some  `exclude` path to the `tsconfig.json` :
+Oops, theme are some `stories.d.ts` `test.d.ts` files create by typescript. We could ignore it by adding some  `exclude` path to the `tsconfig.json` :
 
 ```json
 ...

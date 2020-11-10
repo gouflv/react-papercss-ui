@@ -10,7 +10,7 @@ There are several requirements that our component library should:
 - Components base on PaperCSS
 - Storybook for development preview and Doc
 - Testing with Jest
-- Custom Rollup for library packaging tool
+- Rollup for library packaging
 
 ## Research resource
 
