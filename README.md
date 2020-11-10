@@ -1,18 +1,28 @@
 # React PaperCSS UI
 
+
+[Preview](https://github.com/gouflv/react-papercss-ui/stories)
+
+[Tutorial: Create a React Library](https://github.com/gouflv/react-papercss-ui)
+
 ## Features
 - Styling by PaperCSS
 - Build with Rollup and typescript
-- Storybook for development preview
+- Preview  Storybook
 - Testing with Jest and @testing-library
 
 ## Usage
 [WIP]
 
-## Roadmap
+## Components
 - [X] Button
 - [X] Card
 - [X] Space
-- [ ] Collapse
-- [ ] Tabs
+- [X] Collapse
+- [X] Tabs
 - [ ] Modal
+
+## CI
+- [X] Storybook Deploy
+- [ ] Tutorial Doc Deploy
+- [ ] Testing
