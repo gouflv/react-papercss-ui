@@ -53,7 +53,7 @@ There are some key options of configuration:
 
 ```json
 {
-	compilerOptions: {
+	"compilerOptions": {
 		"module": "esnext",
     "lib": ["dom", "esnext"],
     "jsx": "react",
