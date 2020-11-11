@@ -1,5 +1,6 @@
-# React PaperCSS UI
+# React PaperCSS UI 
 
+🚧  WIP: This library is still in DEV
 
 [Preview](https://gouflv.github.io/react-papercss-ui/stories/)
 
