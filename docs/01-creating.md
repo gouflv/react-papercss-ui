@@ -1,4 +1,4 @@
-# Creating library
+# Getting started
 
 First, we start from an empty folder named `react-papercss-ui` or your liking:
 
