@@ -1,5 +1,8 @@
 # React PaperCSS UI 
 
+![Test](https://github.com/gouflv/react-papercss-ui/workflows/Test/badge.svg)
+
+
 🚧  WIP: This library is still in DEV
 
 [Preview](https://gouflv.github.io/react-papercss-ui/stories/)
