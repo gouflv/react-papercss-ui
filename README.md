@@ -28,7 +28,3 @@
 - [X] Collapse
 - [X] Tabs
 - [ ] Modal
-
-## CI
-- [X] Storybook Deploy
-- [ ] Testing
