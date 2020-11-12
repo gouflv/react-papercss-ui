@@ -4,7 +4,7 @@ import '@testing-library/jest-dom/extend-expect'
 
 import { Button, ButtonProps } from '../Button'
 
-describe('Test Component', () => {
+describe('Test Button', () => {
   let props: PropsWithChildren<ButtonProps>
 
   beforeEach(() => {
@@ -17,9 +17,10 @@ describe('Test Component', () => {
   const renderComponent = () => render(<Button {...props} />)
 
   it('should have default className with default props', () => {
+    props.type = undefined
     const { container } = renderComponent()
     const cmp = screen.getByText('Button Test')
-    expect(cmp).toHaveClass('paper-btn')
+    expect(cmp).toHaveClass('paper-btn', { exact: true })
     expect(container).toMatchSnapshot()
   })
 
@@ -44,6 +45,15 @@ describe('Test Component', () => {
     const { container } = renderComponent()
     const cmp = screen.getByText('Button Test')
     expect(cmp).toHaveClass('btn-block')
+    expect(container).toMatchSnapshot()
+  })
+
+  it('should have outline className with set plain', () => {
+    props.type = 'primary'
+    props.plain = true
+    const { container } = renderComponent()
+    const cmp = screen.getByText('Button Test')
+    expect(cmp).toHaveClass('paper-btn btn-primary-outline', { exact: true })
     expect(container).toMatchSnapshot()
   })
 

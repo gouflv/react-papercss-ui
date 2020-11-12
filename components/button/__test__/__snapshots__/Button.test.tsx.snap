@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test Component should called event handler on click 1`] = `
+exports[`Test Button should called event handler on click 1`] = `
 <div>
   <button
     class="paper-btn btn-primary"
@@ -10,7 +10,7 @@ exports[`Test Component should called event handler on click 1`] = `
 </div>
 `;
 
-exports[`Test Component should have block className with set block 1`] = `
+exports[`Test Button should have block className with set block 1`] = `
 <div>
   <button
     class="paper-btn btn-primary btn-block"
@@ -20,17 +20,17 @@ exports[`Test Component should have block className with set block 1`] = `
 </div>
 `;
 
-exports[`Test Component should have default className with default props 1`] = `
+exports[`Test Button should have default className with default props 1`] = `
 <div>
   <button
-    class="paper-btn btn-primary"
+    class="paper-btn"
   >
     Button Test
   </button>
 </div>
 `;
 
-exports[`Test Component should have disabled attr with set disabled 1`] = `
+exports[`Test Button should have disabled attr with set disabled 1`] = `
 <div>
   <button
     class="paper-btn btn-primary"
@@ -41,7 +41,17 @@ exports[`Test Component should have disabled attr with set disabled 1`] = `
 </div>
 `;
 
-exports[`Test Component should have secondary className with type set as secondary 1`] = `
+exports[`Test Button should have outline className with set plain 1`] = `
+<div>
+  <button
+    class="paper-btn btn-primary-outline"
+  >
+    Button Test
+  </button>
+</div>
+`;
+
+exports[`Test Button should have secondary className with type set as secondary 1`] = `
 <div>
   <button
     class="paper-btn btn-secondary"
@@ -51,7 +61,7 @@ exports[`Test Component should have secondary className with type set as seconda
 </div>
 `;
 
-exports[`Test Component should have sizing className with size set as large 1`] = `
+exports[`Test Button should have sizing className with size set as large 1`] = `
 <div>
   <button
     class="paper-btn btn-primary btn-large"
