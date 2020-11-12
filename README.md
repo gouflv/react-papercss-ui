@@ -2,6 +2,7 @@
 
 ![Build](https://github.com/gouflv/react-papercss-ui/workflows/Build/badge.svg)
 ![Test](https://github.com/gouflv/react-papercss-ui/workflows/Test/badge.svg)
+![Coverage](https://img.shields.io/codecov/c/github/gouflv/react-papercss-ui)
 
 
 🚧  WIP: This library is still in DEV
