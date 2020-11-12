@@ -22,6 +22,6 @@ jobs:
           npm run test:coverage
 
       - name: Codecov
-          uses: codecov/codecov-action@v1
-          with:
-            token: 8c3c2818-0ec5-4f8a-8f4f-bc170ed0d86f
+        uses: codecov/codecov-action@v1
+        with:
+          token: 8c3c2818-0ec5-4f8a-8f4f-bc170ed0d86f
