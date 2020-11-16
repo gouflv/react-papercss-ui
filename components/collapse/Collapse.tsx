@@ -1,3 +1,5 @@
+import { useUpdateEffect } from 'ahooks'
+import classNames from 'classnames'
 import React, {
   FC,
   PropsWithChildren,
@@ -6,6 +8,7 @@ import React, {
   useEffect,
   useState
 } from 'react'
+import { isArrayEqual } from '../../utils/array'
 import { toArray } from '../../utils/children'
 
 export type CollapseProps = PropsWithChildren<{
@@ -18,7 +21,7 @@ const Collapse = (props: PropsWithChildren<CollapseProps>) => {
   const [active, setActive] = useState<string[]>([])
 
   useEffect(() => {
-    if (!props.activeKey) return
+    if (typeof props.activeKey === 'undefined') return
     if (Array.isArray(props.activeKey)) {
       setActive((props.activeKey as any[]).map(k => String(k)))
     } else {
@@ -33,6 +36,7 @@ const Collapse = (props: PropsWithChildren<CollapseProps>) => {
       return React.cloneElement(child, {
         ...child.props,
         key,
+        name: child.props.name || key,
         active: isActive,
         onClick: onPanelClick
       } as PanelProps)
@@ -52,9 +56,21 @@ const Collapse = (props: PropsWithChildren<CollapseProps>) => {
     }
   }
 
-  useEffect(() => {
-    if (typeof props.onChange === 'function' && active !== props.activeKey) {
-      props.onChange(active)
+  useUpdateEffect(() => {
+    if (typeof props.onChange !== 'function') return
+    if (props.accordion) {
+      if (active !== props.activeKey) {
+        props.onChange(active)
+      }
+    } else {
+      if (
+        !isArrayEqual(
+          active,
+          Array.isArray(props.activeKey) ? props.activeKey : [props.activeKey]
+        )
+      ) {
+        props.onChange(active)
+      }
     }
   }, [active])
 
@@ -76,16 +92,14 @@ const Panel: FC<PanelProps> = props => {
   }
 
   return (
-    <div className='collapsible'>
+    <div
+      className={classNames('collapsible', {
+        'collapsible--active': props.active
+      })}
+      data-name={props.name}
+    >
       <label onClick={onClick}>{props.header}</label>
-      {!!props.active && (
-        <div
-          className='collapsible-body'
-          style={{ maxHeight: 'none', padding: '0.75rem', opacity: 1 }}
-        >
-          {props.children}
-        </div>
-      )}
+      <div className='collapsible-body'>{props.children}</div>
     </div>
   )
 }

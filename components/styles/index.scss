@@ -16,6 +16,16 @@
   }
 }
 
+.collapsible {
+  &--active {
+    .collapsible-body {
+      max-height: none;
+      padding: 0.75rem;
+      opacity: 1
+    }
+  }
+}
+
 .tabs {
   label {
     &.active {

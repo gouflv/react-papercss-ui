@@ -1,52 +1,166 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test Collapse Component should open panel with active set as "1" 1`] = `
+exports[`Test Collapse Component should emit multi active keys on click un-name panel 1`] = `
 <div>
   <div
     class="collapse-group"
   >
     <div
-      class="collapsible"
+      class="collapsible collapsible--active"
+      data-name="0"
     >
       <label>
         Fist
       </label>
       <div
         class="collapsible-body"
-        style="max-height: none; padding: 0.75rem; opacity: 1;"
+      >
+        Fist Panel
+      </div>
+    </div>
+    <div
+      class="collapsible collapsible--active"
+      data-name="1"
+    >
+      <label>
+        Second
+      </label>
+      <div
+        class="collapsible-body"
+      >
+        Second Panel
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Test Collapse Component should open panel with active set as "1" 1`] = `
+<div>
+  <div
+    class="collapse-group"
+  >
+    <div
+      class="collapsible collapsible--active"
+      data-name="1"
+    >
+      <label>
+        Fist
+      </label>
+      <div
+        class="collapsible-body"
       >
         Fist Panel
       </div>
     </div>
     <div
       class="collapsible"
+      data-name="2"
     >
       <label>
         Second
       </label>
+      <div
+        class="collapsible-body"
+      >
+        Second Panel
+      </div>
+    </div>
+    <div
+      class="collapsible"
+      data-name="3"
+    >
+      <label>
+        Third
+      </label>
+      <div
+        class="collapsible-body"
+      >
+        Third Panel
+      </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`Test Collapse Component should open un-name panel with active set as "1" 1`] = `
+exports[`Test Collapse Component should open panels with active set as ["1", "2"] 1`] = `
 <div>
   <div
     class="collapse-group"
   >
     <div
-      class="collapsible"
+      class="collapsible collapsible--active"
+      data-name="1"
     >
       <label>
         Fist
       </label>
+      <div
+        class="collapsible-body"
+      >
+        Fist Panel
+      </div>
     </div>
     <div
-      class="collapsible"
+      class="collapsible collapsible--active"
+      data-name="2"
     >
       <label>
         Second
       </label>
+      <div
+        class="collapsible-body"
+      >
+        Second Panel
+      </div>
+    </div>
+    <div
+      class="collapsible"
+      data-name="3"
+    >
+      <label>
+        Third
+      </label>
+      <div
+        class="collapsible-body"
+      >
+        Third Panel
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Test Collapse Component should open un-name panel with active set as number 1`] = `
+<div>
+  <div
+    class="collapse-group"
+  >
+    <div
+      class="collapsible collapsible--active"
+      data-name="0"
+    >
+      <label>
+        Fist
+      </label>
+      <div
+        class="collapsible-body"
+      >
+        Fist Panel
+      </div>
+    </div>
+    <div
+      class="collapsible"
+      data-name="1"
+    >
+      <label>
+        Second
+      </label>
+      <div
+        class="collapsible-body"
+      >
+        Second Panel
+      </div>
     </div>
   </div>
 </div>
