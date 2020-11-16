@@ -1,8 +1,18 @@
 @import '~papercss/src/styles.scss';
 
 .space {
+  margin-left: -1rem;
+  margin-right: -1rem;
   > * {
     margin: 1rem;
+  }
+
+  &--large {
+    margin-left: -1.714rem;
+    margin-right: -1.714rem;
+    > * {
+      margin: 1.714rem;
+    }
   }
 }
 
