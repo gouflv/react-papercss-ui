@@ -1,4 +1,4 @@
-# React PaperCSS UI 
+# React PaperCSS UI
 
 ![Build](https://github.com/gouflv/react-papercss-ui/workflows/Build/badge.svg)
 ![Test](https://github.com/gouflv/react-papercss-ui/workflows/Test/badge.svg)
@@ -28,3 +28,4 @@
 - [X] Collapse
 - [X] Tabs
 - [ ] Modal
+- [ ] Select

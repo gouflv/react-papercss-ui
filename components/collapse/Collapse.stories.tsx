@@ -41,3 +41,16 @@ Nesting.args = {
     </Panel>
   ]
 }
+
+export const IndexBase = Template.bind({})
+IndexBase.args = {
+  activeKey: 1,
+  children: [
+    <Panel key='1' header='Fist Panel'>
+      {LOREM}
+    </Panel>,
+    <Panel key='2' header='Second Panel'>
+      {LOREM}
+    </Panel>
+  ]
+}
