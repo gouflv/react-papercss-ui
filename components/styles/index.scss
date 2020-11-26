@@ -45,3 +45,17 @@
     }
   }
 }
+
+.modal {
+  .modal-body {
+    min-width: 240px;
+    min-height: 100px;
+  }
+  &--open {
+    opacity: 1;
+    visibility: visible;
+    .modal-body {
+      top: 50%;
+    }
+  }
+}
