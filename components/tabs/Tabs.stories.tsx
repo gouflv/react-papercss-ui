@@ -16,15 +16,28 @@ const LOREM =
 
 const BasicPanels = [
   <TabPane key='1' tab='Fist Panel' value='1'>
-    A. {LOREM}
+    <header>A.</header> {LOREM}
   </TabPane>,
   <TabPane key='2' tab='Second Panel' value='2'>
-    B. {LOREM}
+    <header>B.</header> {LOREM}
   </TabPane>,
   <TabPane key='3' tab='Third Panel' value='3'>
-    C. {LOREM}
+    <header>C.</header> {LOREM}
   </TabPane>
 ]
 
 export const Basic = Template.bind({})
 Basic.args = { activeKey: '1', children: BasicPanels } as TabsProps
+
+export const IndexBase = Template.bind({})
+IndexBase.args = {
+  activeKey: 1,
+  children: [
+    <TabPane key='1' tab='Fist Panel'>
+      <header>A.</header> {LOREM}
+    </TabPane>,
+    <TabPane key='2' tab='Second Panel'>
+      <header>B.</header> {LOREM}
+    </TabPane>
+  ]
+}
