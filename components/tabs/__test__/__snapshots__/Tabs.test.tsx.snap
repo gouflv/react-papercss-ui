@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Panel Component should open panel with active set as "2" 1`] = `
+<div>
+  <div
+    class="tabs"
+  >
+    <div
+      class="tabs-nav"
+    >
+      <label
+        class=""
+      >
+        First Tab
+      </label>
+      <label
+        class="active"
+      >
+        Second Tab
+      </label>
+    </div>
+    <div
+      class="tabs-content"
+    >
+      <div
+        class="content"
+      >
+        First Tab Content
+      </div>
+      <div
+        class="content active"
+      >
+        Second Tab Content
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Test Panel Component should open panel without active setting 1`] = `
+<div>
+  <div
+    class="tabs"
+  >
+    <div
+      class="tabs-nav"
+    >
+      <label
+        class=""
+      >
+        First Tab
+      </label>
+      <label
+        class=""
+      >
+        Second Tab
+      </label>
+    </div>
+    <div
+      class="tabs-content"
+    >
+      <div
+        class="content"
+      >
+        First Tab Content
+      </div>
+      <div
+        class="content"
+      >
+        Second Tab Content
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Test Panel Component should open un-name panel with active set as number 1`] = `
+<div>
+  <div
+    class="tabs"
+  >
+    <div
+      class="tabs-nav"
+    >
+      <label
+        class=""
+      >
+        First Tab
+      </label>
+      <label
+        class="active"
+      >
+        Second Tab
+      </label>
+    </div>
+    <div
+      class="tabs-content"
+    >
+      <div
+        class="content"
+      >
+        First Tab Content
+      </div>
+      <div
+        class="content active"
+      >
+        Second Tab Content
+      </div>
+    </div>
+  </div>
+</div>
+`;

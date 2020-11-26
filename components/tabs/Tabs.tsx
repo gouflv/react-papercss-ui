@@ -19,13 +19,13 @@ const Tabs = (props: PropsWithChildren<TabsProps>) => {
   const [active, setActive] = useState<string>()
 
   useEffect(() => {
-    if (!props.activeKey) return
+    if (typeof props.activeKey === 'undefined') return
     setActive(String(props.activeKey))
   }, [props.activeKey])
 
   function tabNavRender() {
     return toArray<ReactElement>(props.children).map((child, index) => {
-      const key = String(child.props.value) || String(index)
+      const key = child.props.value || String(index)
       return (
         <label
           key={key}
@@ -42,7 +42,7 @@ const Tabs = (props: PropsWithChildren<TabsProps>) => {
 
   function contentRender() {
     return toArray<ReactElement>(props.children).map((child, index) => {
-      const key = String(child.props.value) || String(index)
+      const key = child.props.value || String(index)
       const isActive = active === key
       return React.cloneElement(child, {
         ...child.props,
