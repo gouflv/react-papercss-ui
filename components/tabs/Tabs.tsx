@@ -1,3 +1,4 @@
+import { useUpdateEffect } from 'ahooks'
 import classNames from 'classnames'
 import React, {
   FC,
@@ -51,7 +52,7 @@ const Tabs = (props: PropsWithChildren<TabsProps>) => {
     })
   }
 
-  useEffect(() => {
+  useUpdateEffect(() => {
     if (typeof props.onChange === 'function' && active !== props.activeKey) {
       props.onChange(active)
     }

@@ -1,10 +1,12 @@
 @import '~papercss/src/styles.scss';
 
 .space {
+  display: flex;
+  align-items: center;
   margin-left: -1rem;
   margin-right: -1rem;
   > * {
-    margin: 1rem;
+    margin: 0 1rem;
   }
 
   &--large {

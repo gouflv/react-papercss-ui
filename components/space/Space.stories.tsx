@@ -5,6 +5,8 @@ import { Space } from './Space'
 const Box: FC = props => (
   <span
     style={{
+      display: 'block',
+      padding: '0.5rem',
       backgroundColor: '#ccc'
     }}
   >
@@ -22,10 +24,4 @@ const Template: Story = args => <Space {...args} />
 export const Basic = Template.bind({})
 Basic.args = {
   children: [<Box>Link1</Box>, <Box>Link2</Box>, <Box>Link3</Box>]
-}
-
-export const Large = Template.bind({})
-Large.args = {
-  ...Basic.args,
-  size: 'large'
 }
