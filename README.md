@@ -9,7 +9,7 @@
 
 [Preview](https://gouflv.github.io/react-papercss-ui/stories/)
 
-[Tutorial: Create a React Library](https://github.com/gouflv/react-papercss-ui/blob/master/docs/00-intro.md)
+[Tutorial: Create a React Library](https://github.com/gouflv/react-papercss-ui/tree/master/docs)
 
 ## Features
 - Styling by PaperCSS
@@ -27,6 +27,6 @@
 - [X] Space
 - [X] Collapse
 - [X] Tabs
-- [ ] Modal
+- [X] Modal
 - [ ] Select
 - [ ] Form (use react-hook-form)
